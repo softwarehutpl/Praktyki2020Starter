@@ -1,26 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { DemoButton } from './components/DemoButton/DemoButton';
+import { Button } from 'antd';
 
-function App() {
+export const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Praktyki!</h1>
+        <img width={40} alt="" src={logo} />
       </header>
+      <hr />
+      Komponent testowy:
+      <div>
+        <DemoButton>This is a test!</DemoButton>
+      </div>
+      <hr />
+      Komponenty antd:
+      <div>
+        <Button>Antd Button</Button>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

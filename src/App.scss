@@ -1,6 +1,10 @@
 @import './common/reset.scss';
 @import '~antd/dist/antd.css';
 
+body {
+  margin: 12px;
+}
+
 .App {
   text-align: center;
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.scss';
 import { DemoButton } from './components/DemoButton/DemoButton';
 import { Button } from 'antd';
+import './App.scss';
 
 export const App = () => {
   return (

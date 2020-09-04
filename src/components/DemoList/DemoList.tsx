@@ -9,7 +9,9 @@ export interface IDemoListProps {
 export const DemoList: React.FC<IDemoListProps> = ({ items, horizontal }) => (
   <div className={horizontal ? styles.DemoListHorizontal : styles.DemoList}>
     {items.map((item) => (
-      <div className={styles.Item} key={item}>{item}</div>
+      <div className={styles.Item} key={item}>
+        {item}
+      </div>
     ))}
   </div>
 );

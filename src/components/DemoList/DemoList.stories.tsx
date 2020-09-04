@@ -14,3 +14,7 @@ const TestData = ['Raz', 'Dwa', 'Trzy'];
 export const BasicList: Story<IDemoListProps> = () => (
   <DemoList items={TestData} />
 );
+
+export const HorizontalList: Story<IDemoListProps> = () => (
+  <DemoList items={TestData} horizontal />
+);

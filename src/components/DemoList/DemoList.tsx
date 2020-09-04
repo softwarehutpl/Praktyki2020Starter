@@ -1,15 +1,15 @@
 import React from 'react';
 import styles from './DemoList.module.scss';
-import { Button } from 'antd';
 
 export interface IDemoListProps {
   items: string[];
+  horizontal?: boolean;
 }
 
-export const DemoList: React.FC<IDemoListProps> = ({ items }) => (
-  <div className={styles.DemoList}>
+export const DemoList: React.FC<IDemoListProps> = ({ items, horizontal }) => (
+  <div className={horizontal ? styles.DemoListHorizontal : styles.DemoList}>
     {items.map((item) => (
-      <Button key={item}>{item}</Button>
+      <div class={styles.Item} key={item}>{item}</div>
     ))}
   </div>
 );
